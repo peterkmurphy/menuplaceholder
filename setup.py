@@ -26,4 +26,5 @@ setup(name='menuplaceholder',
         ],
     long_description=open('README.rst').read(),
     install_requires = ["Django >= 1.0", "Mezzanine >= 4.0"],
+    zip_safe = False,
 )
