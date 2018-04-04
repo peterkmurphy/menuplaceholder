@@ -3,17 +3,16 @@
 from setuptools import setup
 
 setup(name='menuplaceholder',
-    version='0.0.1',
+    version='0.0.1.2',
     description='Placeholder items for Mezzanine menus.',
     author='Peter Murphy',
     author_email='peterkmurphy@gmail.com',
 #    url='http://pypi.python.org/pypi/glyphviewer/',
     packages=['menuplaceholder'],
     package_data={
-        'menuplaceholder': [
-            'templates/menuplaceholder/*.html',
-        ],
+        'menuplaceholder': ['templates/*.html', 'templates/**/*.html'],
     },
+    include_package_data=True,
 #    keywords = 'font glyph web woff ttf otf TrueType OpenType Django',
     license='LICENSE.txt',
     classifiers = [
