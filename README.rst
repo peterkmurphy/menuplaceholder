@@ -50,13 +50,13 @@ Dependencies
 The **menuplaceholder** app has been trialled with both Python 2.7 and 3.5.
 The other dependencies are:
 
-* Django (1.*x*; has not been tested on 2.*x*)
-* Mezzanine (4.*x*)
+* Django (1 . *x*; has not been tested on 2. *x*)
+* Mezzanine (4 . *x*)
 
 Versions
 --------
 
-* 0.1 (April 5th 2018) - Initial release.
+* 0.1 (April 5th 2018) - Initial release. (Bug fix version 0.1.5 on April 8th.)
 
 Copyright
 ---------
