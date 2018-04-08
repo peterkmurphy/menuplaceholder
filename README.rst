@@ -25,12 +25,16 @@ The **menuplaceholder** app works with the following things:
 Installation and usage
 -----------------------------
 
-Like any Python app, one goes::
+You can either go::
+
+  pip install menuplaceholder
+
+Or download this source and go::
 
   python setup.py install
 
 Then add ``"menuplaceholder"`` to ``INSTALLED_APPS`` in the settings.py file
-for your Django installation. Afterwards::
+for your Django installation, preferably *at the beginning*. Afterwards::
 
   python manage.py makemigrations menuplaceholder
   python manage.py migrate
@@ -44,6 +48,12 @@ Once this is done, adding a placeholder menu item (or ten) is trivial.
   Select it.
 * Choose a *Title* and then click on *Save*.
 
+Note: If you place ``"menuplaceholder"`` in ``INSTALLED_APPS`` after
+``"mezzanine.pages"``, you will find your dummy menu items clickable (and
+thus not dummy menu items at all). That's because the main magic of this app is
+rewriting the default Mezzanine menu templates, and if you put
+``"mezzanine.pages"`` first, it "wins". However, if you put ``"menuplaceholder"``
+first, it should take priority.
 
 Dependencies
 -------------
@@ -56,7 +66,7 @@ The other dependencies are:
 Versions
 --------
 
-* 0.1 (April 5th 2018) - Initial release. (Bug fix version 0.1.5 on April 8th.)
+* 0.1 (April 5th 2018) - Initial release. (Bug fix version 0.1.6 on April 8th.)
 
 Copyright
 ---------

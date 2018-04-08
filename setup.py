@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name='menuplaceholder',
-    version='0.1.5',
+    version='0.1.6',
     description='Placeholder items for Mezzanine menus.',
     author='Peter Murphy',
     author_email='peterkmurphy@gmail.com',
